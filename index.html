@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" simple="width=device-width, initial-scale=1.0">
+    <title>menyu</title>
+    <style type="text/css">
+    *{
+    margin: 0;
+    padding: 0;
+}
+.contianer{
+    width: 1002px;
+    margin: 30px auto;
+}
+.contianer .lvl1{
+list-style: none;
+border: 1px solid red;
+}
+.contianer .lvl1 li{
+   width: 200px;
+   float: left;
+ }
+ .contianer .lvl1 li a{
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+ }
+ .contianer ul li a:hover{
+    background-color: wheat;
+    color: orange;
+ }
+ .tozalash{
+    clear: both;
+ }
+.contianer .lvl1 li .lvl2{
+list-style: none;
+display: none;
+position: absolute;
+}
+.contianer .lvl1 li:hover .lvl2{
+   
+   display: block;
+}
+.contianer .lvl1 li .lvl2 li{
+   float: none;
+   position: relative;
+   
+}
+.contianer .lvl1 li .lvl2 li .lvl3{
+   position: absolute;
+   left: 200px;
+
+}
+.contianer .lvl1 li .lvl2 li:hover .lvl3 {
+   position: absolute;
+   left: 200px;
+   top: 0px;
+}
+
+.contianer .lvl1 li .lvl2 li .lvl3 li{
+   display: none;
+   list-style: none;
+   
+}
+.contianer .lvl1 li .lvl2 li:hover .lvl3 li{
+   display: block;
+}
+.contianer .lvl1 li .lvl2 li .lvl3 li .lvl4 {
+   display: none;
+   position: absolute;
+   left: 200px;
+
+}
+.contianer .lvl1 li .lvl2 li .lvl3 li:hover .lvl4 {
+   display: block;  
+   position: absolute;
+   left: 200px;
+   top: 0px;
+}
+
+
+.contianer .lvl1 li .lvl2 li .lvl3 li .lvl4 li{
+   display: block;
+}
+.tepaga{
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+}
+.reklama{
+    width: 250px;
+    height: 270px;
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 0px;
+    top: 200px;
+}
+.contianer nav{
+    position: sticky;
+    top: 0px;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="tepaga">
+        <a href="#"><img src="stiv.png" width="30px" height="30px"></a>
+    </div>
+    <div class="reklama">
+        <img src="images.jpg" width="250" height="400px">
+    </div>
+    <div class="contianer">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+        <nav>
+            <ul class="lvl1">
+                <li><a href="#">Menu1</a>
+                    <ul class="lvl2">
+                        <li><a href="#">menyu2.1</a></li>
+                        <li><a href="#">menyu2.2</a>
+                        <ul class="lvl3">
+                            <li><a href="#">menyu2.2.1</a></li>
+                            <li><a href="#">menyu2.2.2</a>
+                                <ul class="lvl4">
+                                    <li><a href="#">menyu2.2.2.1</a></li>                          
+                                    <li><a href="#">menyu2.2.2.2</a></li>
+                                    <li><a href="#">menyu2.2.2.3</a></li>
+                                    <li><a href="#">menyu2.2.2.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">menyu2.2.3</a></li>
+                            <li><a href="#">menyu2.2.4</a>
+                                <ul class="lvl4">
+                                    <li><a href="#">menyu2.2.4.1</a></li>
+                                    <li><a href="#">menyu2.2.4.2</a></li>
+                                    <li><a href="#">menyu2.2.4.3</a></li>
+                                    <li><a href="#">menyu2.2.4.4</a></li>
+                                </ul></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">menyu2.3</a></li>
+                        <li><a href="#">menyu2.4</a>
+                            <ul class="lvl3">
+                                <li><a href="#">menyu3.3.1</a></li>
+                                <li><a href="#">menyu3.3.2</a></li>
+                                <li><a href="#">menyu3.3.3</a></li>
+                                <li><a href="#">menyu3.3.4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a>
+                    <ul class="lvl2">
+                        <li><a href="#">menyu3.1</a>
+                            <ul class="lvl3">
+                                <li><a href="#">menyu3.1.1</a></li>
+                                <li><a href="#">menyu3.1.2</a>
+                                    <ul class="lvl4">
+                                        <li><a href="#">menyu2.2.2.1</a></li>
+                                        <li><a href="#">menyu2.2.2.2</a></li>
+                                        <li><a href="#">menyu2.2.2.3</a></li>
+                                        <li><a href="#">menyu2.2.2.4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">menyu3.1.3</a></li>
+                                <li><a href="#">menyu3.1.4</a>
+                                    <ul class="lvl4">
+                                        <li><a href="#">menyu2.2.2.1</a></li>
+                                        <li><a href="#">menyu2.2.2.2</a></li>
+                                        <li><a href="#">menyu2.2.2.3</a></li>
+                                        <li><a href="#">menyu2.2.2.4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">menyu3.2</a></li>
+                        <li><a href="#">menyu3.3</a>
+                            <ul class="lvl3">
+                                <li><a href="#">menyu3.3.1</a></li>
+                                <li><a href="#">menyu3.3.2</a>
+                                    <ul class="lvl4">
+                                        <li><a href="#">menyu2.2.2.1</a></li>
+                                        <li><a href="#">menyu2.2.2.2</a></li>
+                                        <li><a href="#">menyu2.2.2.3</a></li>
+                                        <li><a href="#">menyu2.2.2.4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">menyu3.3.3</a></li>
+                                <li><a href="#">menyu3.3.4</a>
+                                    <ul class="lvl4">
+                                        <li><a href="#">menyu2.2.2.1</a></li>
+                                        <li><a href="#">menyu2.2.2.2</a></li>
+                                        <li><a href="#">menyu2.2.2.3</a></li>
+                                        <li><a href="#">menyu2.2.2.4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">menyu3.4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu4</a></li>
+                <li><a href="#">Menu5</a>
+                    <ul class="lvl2">
+                        <li><a href="#">menyu5.1</a></li>
+                        <li><a href="#">menyu5.2</a></li>
+                        <li><a href="#">menyu5.3</a></li>
+                        <li><a href="#">menyu5.4</a></li>
+                    </ul>
+                </li>
+                <div class="tozalash"></div>
+            </ul>
+        </nav>
+        <div class="simple" style="padding-top: 50px;">
+            <h1><font color="red" size="4"  face="Tahoma">Buxoro qamali — 1220-yil mart oyida, yaʼni moʻgʻullar tomonidan Xorazmshohlar davlatinining bosib olishi davrida sodir boʻlgan harbiy bosqin. Bosqinda Moʻgʻullar imperiyasining xoni Chingizxon sulton Muhammad II tomonidan boshqarilayotgan Xorazmshohlar davlati bilan tutashgan chegaraning turli tomonlaridan hujum uyushtirgan. Xorazmshoh yirik shaharlarni yakka tartibda mudofaa qilishni rejalashtirgan boʻlsa, moʻgʻullar chegara shahar — Oʻtrorni qamal qilib, Xorazmshohlar davlatiga qaqshatqich zarbalar berishni maqsad qilgandi. Buxoro shahri Xorazmshohlar davlatining yirik savdo va madaniy markazi boʻlgan. Shahar Moʻgʻullar imperiyasi bilan chegaradan ancha uzoqda joylashganligi sababli xorazmshoh bu shaharni himoya qilish uchun 20 000 dan kamroq askar ajratgan. Soni 30 000 dan 50 000 gacha boʻlgan moʻgʻul qoʻshinlari katta qoʻshin uchun oʻtib boʻlmas toʻsiq deb hisoblangan Qizilqum choʻlini kesib oʻtishga muvaffaq boʻlganlar. Buxoro mudofaachilari butunlay sarosimaga tushgan va muvaffaqiyatsiz jangdan soʻng tashqi shahar uch kun ichida taslim boʻlgan. Xorazmlik hukmdorga sodiq askarlar qal’a buzib tashlangunga qadar ikki haftadan kamroq vaqt davomida mudofaani davom ettirganlar. Moʻgʻul qoʻshini qoʻrgʻondagi barchani oʻldirib, aholining katta qismini qul qilib olgan. Mohir hunarmandlar mehnat mahsuli moʻgʻullar tomonidan oʻzlashtirilgan, boshqalar esa harbiylikka jalb etilgan. Garchi oʻsha paytda Buxoro yongʻinlar oqibatida vayron boʻlgan boʻlsa-da, talafot nisbatan kamroq boʻlgan. Qisqa vaqt ichida shahar yana savdo va madaniy markazga aylanib, Pax Mongolica davrida yanada rivojlangan. (Davomi...)Zebunniso begim — shoira, maʼrifatparvar. Boburiylar sulolasidan Avrangzebning qizi. Onasi Dilrasbonuning shajarasi Safaviylarga va Boburning qizi — Gulbadan begimga borib taqaladi. „Maxfiy“ taxallusi bilan ijod qilgani taxmin qilinadi. Zebunniso begim hayoti va ijodi haqida Bareliy, Sherxoni Ludiy, Hakimxon toʻra kabi tarixchi va tazkiranavis olimlar asarlarida maʼlumotlar keltirilgan. U yetti yoshida Qurʼonni toʻliq yod olgan, keyinchalik falsafa, mantiq, yulduz ilmi, tarix, fiqh fanlarini yaxshi oʻzlashtirgan, nastaʼliq, nasʼh, shikasta xatlarini mahorat bilan yozgan, bir necha marta husnixat bilan Qurʼonni koʻchirgan. Alisher Navoiy, Zahiriddin Muhammad Bobur asarlarini oʻrganib, sheʼriyatga boʻlgan ixlosi oshgan, atrofidagi shoir va olimlariga turli tarjimalar, qoʻlyozmalarni koʻchirishni buyurtma qilgan, ularni maosh bilan taʼminlab kelgan. Zebunniso begimning kutubxonasi oʻz davri kutubxonalari ichida eng kattasidir. Malika bobosining istagiga koʻra oʻz amakivachchasi Sulaymonshukuh bilan unashtirilgan. Amakivachchasi vafot etgach, umrining oxiriga qadar boshqa turmush qurmagan. (Davomi...)Jahongir maqbarasi — XVII asrda Boburiy hukmdor Jahongir uchun qurilgan maqbara. Ushbu maqbaraning qurilishi 1637-yilda tugatilgan. Pokistonning Lohur shahri yaqinidagi Shohdara bogʻda, Ravi daryosi boʻyida joylashgan. Maqbara qurilishi hukmdor Jahongirshoh Nuriddin vafotidan keyin — 1627-yilda boshlangan va Boburiylar davlati deyarli butun Hindiston yarimoroli ustidan hukmronlik qilayotgan bir paytda, 1637-yilda Shoh Jahon hukmronligi davrida qurib bitkazilgan. Bino freskalar va marmar bilan bezatilgan ichki hamda parchinlar bilan bezatilgan tashqi koʻrinishi bilan mashhur. Maqbara, Akbari Saroy va Osaf Xon maqbarasi bilan birga, hozirda UNESCOning Butunjahon merosi roʻyxatiga kiritilgan ansamblning bir qismidir. (Davomi...)</font>
+            </h1>
+        </div>
+    </div>
+</body>
+</html>
